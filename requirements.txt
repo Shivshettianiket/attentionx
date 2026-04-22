@@ -1,8 +1,21 @@
+# ── Core UI ──────────────────────────────────────────────────────────────────
 streamlit>=1.35.0
-openai-whisper
-librosa
+
+# ── Speech & Audio ───────────────────────────────────────────────────────────
+openai-whisper==20231117
+librosa==0.10.2
+soundfile==0.12.1
+
+# ── AI / LLM ─────────────────────────────────────────────────────────────────
 google-generativeai>=0.5.0
-mediapipe
-opencv-python-headless
-numpy
-pandas
+
+# ── Vision (face detection for 9:16 crop) ────────────────────────────────────
+mediapipe==0.10.14
+opencv-python-headless==4.10.0.84
+
+# ── Data ─────────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+pathlib2>=2.3.7
