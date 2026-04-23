@@ -1,4 +1,10 @@
 # ⚡ AttentionX — Automated Viral Clip Engine
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
+![Whisper](https://img.shields.io/badge/Whisper-ASR-green)
+![Gemini](https://img.shields.io/badge/Gemini-1.5_Flash-orange)
+![License](https://img.shields.io/badge/License-MIT-purple)
+![Hackathon](https://img.shields.io/badge/AttentionX_Hackathon-2026-blueviolet)
 
 > Turn a 2-hour lecture into 5 viral Reels in minutes.
 > Powered by the **PULSE Score** — *Peak Urgency & Listener Signal Engine*.
