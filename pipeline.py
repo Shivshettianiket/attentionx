@@ -128,7 +128,7 @@ def compute_prosodic_energy(audio_path: str, segments: list[dict]) -> list[float
 def compute_urgency_velocity(segments: list[dict]) -> list[float]:
     """
     U — Urgency Velocity: rate of change in words-per-second.
-    People speak faster when excited or making a key point.
+    Now includes pause detection — silence before a segment = urgency spike.
     """
     def wps(seg: dict) -> float:
         dur = max(seg["end"] - seg["start"], 0.01)
@@ -137,9 +137,14 @@ def compute_urgency_velocity(segments: list[dict]) -> list[float]:
     rates = [wps(s) for s in segments]
     deltas = []
     for i, r in enumerate(rates):
+        pause = 0.0
+        if i > 0:
+            pause = max(0, segments[i]["start"] - segments[i - 1]["end"])
+        pause_boost = min(pause / 2.0, 1.0)
+
         window = rates[max(0, i - 2): i + 3]
         avg = sum(window) / len(window)
-        deltas.append(abs(r - avg))
+        deltas.append(abs(r - avg) + pause_boost)
     return normalize(deltas)
 
 
