@@ -32,14 +32,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Cleaned `README.md` — removed accidentally merged `requirements.txt` content
 - Pinned all dependency versions in `requirements.txt`
 
-### Architecture
-```
-Video → ffmpeg Audio → Whisper ASR → PULSE Signals (P·U·L·E) → Gemini (S) → Ranking → Clip Export
-```
 
----
-
-## [1.0.0] — 2026-04-15
 
 ### Added
 - Initial AttentionX prototype for AI Hackathon 2026
