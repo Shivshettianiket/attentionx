@@ -113,14 +113,3 @@ attentionx/
 
 ## 🏆 Why This Wins
 
-- 🚀 **Fast** — optimised ffmpeg pipeline, Whisper tiny runs ~5× real-time
-- 🧠 **Explainable AI** — every PULSE score shows its 5 signal breakdown
-- 🎯 **Real-world use case** — creators, educators, marketers all benefit
-- 🎥 **Demo-ready UI** — polished Streamlit interface built for judges
-- ⚡ **Clean execution** — modular, well-documented codebase
-
----
-
-## 📄 License
-
-MIT © 2026 Aniket Shivshetti
