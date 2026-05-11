@@ -112,4 +112,6 @@ attentionx/
 ---
 
 ## 🏆 Why This Wins
+- 🚀 **Fast** — optimised ffmpeg pipeline, Whisper tiny runs ~5× real-time
+
 
