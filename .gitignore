@@ -48,3 +48,5 @@ desktop.ini
 .ipynb_checkpoints/
 *.ipynb
 
+# ── Video / media uploads (don't commit large files) ─────────────────────────
+*.mp4
