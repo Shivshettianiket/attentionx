@@ -51,5 +51,6 @@ desktop.ini
 # ── Video / media uploads (don't commit large files) ─────────────────────────
 *.mp4
 *.mov
+*.avi
 
 
